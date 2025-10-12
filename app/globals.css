@@ -4,7 +4,37 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+.textcolor {
+  color: #fed59f;
+}
 
+.bodybg {
+  background-image: repeating-linear-gradient(
+      220deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      189deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      148deg,
+      rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px,
+      transparent 19px,
+      transparent 22px
+    ),
+    linear-gradient(90deg, rgb(30, 169, 65), rgb(158, 25, 173));
+}
+.footerbg {
+  background: #23153b;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,4 +53,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* swipper styles*/
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.viewemenu{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  transition: all linear 0.5s;
+}
+.hidemenue{
+  
+ position: absolute;
+ right: -100%;
+ top: 100%;
+  transition: all linear 0.5s
 }
