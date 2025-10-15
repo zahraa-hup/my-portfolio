@@ -27,7 +27,7 @@ function page() {
       name: "Booking appointment",
       tech: "Reactjs,MUI,kinde,Strapi",
       src: "/img/bookingappointment.png",
-      linkh: "",
+      linkh: "https://loquacious-medovik-87819f.netlify.app/",
     },
     {
       name: "Cartoon movies",
@@ -61,12 +61,14 @@ function page() {
           My Projects
         </div>
       </div>
-      {num<500?<div className="mb-5 text-2xl">pull to show more projects 👉👉</div>:null}
+      {num < 500 ? (
+        <div className="mb-5 text-2xl">pull to show more projects 👉👉</div>
+      ) : null}
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={num<500?"1":num<700?"2":"4"}
+        slidesPerView={num < 500 ? "1" : num < 700 ? "2" : "4"}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -86,7 +88,7 @@ function page() {
                 tech={item.tech}
                 src={item.src}
                 linkh={item.linkh}
-              wid={num<500?500:300}
+                wid={num < 500 ? 500 : 300}
               />
             </SwiperSlide>
           );
