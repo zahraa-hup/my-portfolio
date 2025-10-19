@@ -21,7 +21,7 @@ function page() {
       name: "Ecommerce",
       tech: "Nextjs,Tailwindcss,Strapi,Clerk,Stripe",
       src: "/img/ecommerce.jpeg",
-      linkh: "",
+      linkh: "https://ecomnextjsproject.vercel.app/",
     },
     {
       name: "Booking appointment",
